@@ -1,0 +1,34 @@
+.Calendar {
+  width: 80%;
+  transform: translate(12%, 5%);
+
+  .title {
+    text-align: center;
+    background-color: rgba(9, 121, 84, 0.7);
+    border-radius: 20px 20px 5px 5px;
+  }
+  .CalendarTitle {
+    border-radius: 20px 20px;
+    // background-color: brown;
+    > button {
+      cursor: auto;
+      border-bottom: 1px solid black;
+      margin-bottom: 3px;
+    }
+  }
+  .CalendarItem {
+    > button {
+      left: 0px;
+      cursor: pointer;
+      background-color: rgba(28, 39, 54, 0.5);
+      color: white;
+      &:hover {
+        background-color: rgba(36, 109, 109, 0.8);
+        transition: all ease 0.3s;
+      }
+    }
+    // &:active {
+    //   transform: translate(0%, 10%);
+    // }
+  }
+}
