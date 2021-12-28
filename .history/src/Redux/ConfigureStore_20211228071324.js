@@ -12,3 +12,6 @@ const ConfigureStore = () => {
 };
 
 export default ConfigureStore;
+© 2021 GitHub, Inc.
+Terms
+Privacy
