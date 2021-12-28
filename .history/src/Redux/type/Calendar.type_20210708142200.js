@@ -1,2 +1,0 @@
-export const CHANGE_DATE = 'CHANGE_DATE';
-export const CHANE_CHOOSE_DATE = 'CHANE_CHOOSE_DATE';

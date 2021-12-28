@@ -1,7 +1,0 @@
-export const FETCH_LIST_TASK = 'FETCH_LIST_TASK';
-export const FETCH_LIST_FALIED = 'FETCH_LIST_TASK_FALIED';
-export const FETCH_LIST_SUCCESS = 'FETCH_LIST_TASK_SUCCESS';
-export const ADD_NEW_TASK = 'ADD_NEW_TASK';
-export const EDIT_TASK = 'ADD_NEW_TASK';
-export const EDIT_TASK = 'DETELE_TASK';
-export const FILTER_TASK = 'FILTER_TASK';
