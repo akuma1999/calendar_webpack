@@ -3,7 +3,9 @@ import React from "react";
 // import component
 import ShowCalendar from "./ShowCalendar/ShowCalendar";
 import ListTask from "./ListTask";
+import Sigin from "./Sigin";
 import Loading from "./loading";
+import Login from "./Login";
 // import ListTask from './ListTask';
 // import ShowCalendar from './ShowCalendar/ShowCalendar';
 //
@@ -21,12 +23,14 @@ export default function Root() {
 					element={<ListTask loading={(v) => setLoading(v)} />}
 				/>
 
+				<Route path="/login" element={<Login />} />
+				<Route path="/sigin" element={<Sigin />} />
 				<Route
 					path="/"
 					element={<ShowCalendar loading={(v) => setLoading(v)} />}
 				/>
 			</Routes>
-			<Loading loading={loading} />
+			{/* <Loading loading={loading} /> */}
 		</>
 	);
 }

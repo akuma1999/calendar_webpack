@@ -7,8 +7,10 @@ import "./style.scss";
 
 export default function LoginPage() {
 	const [data, setData] = React.useState({
+		name: "",
 		account: "",
 		pass: "",
+		re_pass: "",
 	});
 
 	const submit = () => {
@@ -19,10 +21,21 @@ export default function LoginPage() {
 		const { name, value } = e.target;
 		setData({ ...data, [name]: value });
 	};
+
 	return (
 		<div className="login-container">
 			<div>
-				<p>đăng nhập</p>
+				<p>đăng Ký</p>
+				<div>
+					<TextField
+						id="outlined-basic"
+						name="name"
+						onChange={(e) => textChange(e)}
+						label="Tên người dùng"
+						variant="outlined"
+						fullWidth={true}
+					/>
+				</div>
 				<div>
 					<TextField
 						id="outlined-basic"
@@ -44,11 +57,21 @@ export default function LoginPage() {
 					/>
 				</div>
 				<div>
+					<TextField
+						id="outlined-basic"
+						label="Lặp lại mật khẩu"
+						name="re_pass"
+						onChange={(e) => textChange(e)}
+						variant="outlined"
+						fullWidth={true}
+					/>
+				</div>
+				<div>
 					<Button
 						variant="contained"
 						color="primary"
-						fullWidth={true}
 						onClick={() => submit()}
+						fullWidth={true}
 					>
 						Gửi
 					</Button>

@@ -1,9 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
 :root {
-  --blue: #1e90ff;
-  --white: #ffffff;
+	--blue: #1e90ff;
+	--white: #ffffff;
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
+}
+
+.root {
+	padding: 0;
+	margin: 0;
 }
